@@ -1,0 +1,319 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.company-title {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #e60000;
+}
+
+/* Hero Section */
+.hero {
+    background: url('C:/Users/paiko/OneDrive/Pictures/Saved Pictures/background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a10000;
+}
+
+/* About Section */
+.content-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    
+}
+
+#about #box {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    background-color:  #e6f7ff;
+    padding: 50px 20px ;
+}
+
+
+.about-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Company Section */
+.company-section {
+    display: flex;
+    flex-direction: column;  /* Stacked layout for larger screens */
+    padding: 50px 20px;
+    background-color: #e6f7ff;
+    color: red;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Container for Company Banner */
+.company-banner {
+    margin-bottom: 40px;
+}
+
+/* Company Stats Section */
+.company-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Center align the stats */
+    gap: 20px;
+    max-width: 800px;  /* Limit width to prevent stretching */
+    margin: 0 auto;  /* Center the stats container */
+}
+
+/* Individual Stat Box */
+.stat {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(50% - 10px);  /* 50% width minus gap for 2 items in a row */
+    box-sizing: border-box;
+}
+
+/* Stat Title */
+.stat h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Stat Description */
+.stat p {
+    font-size: 1.1rem;
+}
+
+/* For Smaller Screens */
+@media (max-width: 768px) {
+    .stat {
+        width: calc(50% - 20px); /* Adjust for 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .stat {
+        width: 100%; /* Adjust to 1 item per row on small screens */
+    }
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer .social-media ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-media ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* Products and Services Section */
+.products-services-section {
+    padding: 50px 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.products-services-section h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.products-services-section p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.products-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.products-services-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Responsive grid for 3 items per row */
+    text-align: left;
+}
+
+.products-services-item h3 {
+    font-size: 1.5rem;
+    color: #e60000;
+    margin-bottom: 10px;
+}
+
+.products-services-item p {
+    font-size: 1rem;
+    color: black;
+}
+
+.products-services-item:hover {
+    background-color: #e6f7ff;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+/* For Smaller Screens */
+@media (max-width: 768px) {
+    .products-services-item {
+        width: calc(50% - 20px); /* Adjust to 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .products-services-item {
+        width: 100%; /* Adjust to 1 item per row */
+    }
+}
+/* Container for the Marquee */
+.marquee-left, .marquee-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50px;  /* Adjust the width as per your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;  /* Adjust the font size as needed */
+    font-weight: bold;
+    color: white;
+    background-color:#333;  /* Background color to make text stand out */
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Make text vertical */
+.marquee-left p, .marquee-right p {
+    transform: rotate(90deg);  /* Rotate text to make it vertical */
+    white-space: nowrap;  /* Prevent line breaks */
+    margin: 0;  /* Remove margin for better alignment */
+}
+
+/* Left Marquee */
+.marquee-left {
+    left: 0;
+    animation: scroll-left 10s linear infinite; /* Adjust time for speed */
+}
+
+/* Right Marquee */
+.marquee-right {
+    right: 0;
+    animation: scroll-right 10s linear infinite; /* Adjust time for speed */
+}
+
+/* Scrolling animation for left side */
+@keyframes scroll-left {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Scrolling animation for right side */
+@keyframes scroll-right {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
